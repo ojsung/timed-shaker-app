@@ -1,6 +1,7 @@
 enum NavigatorRoute {
   home,
-  newRoutine;
+  newRoutine,
+  editSleepType;
 
   static NavigatorRoute matchRoute(String routeName) {
     return NavigatorRoute.values.firstWhere((element) => element.name == routeName,

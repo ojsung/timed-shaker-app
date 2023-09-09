@@ -33,8 +33,18 @@ class HomePage extends StatelessWidget {
           )),
         ],
       ),
-      floatingActionButton: IconButton(
-          onPressed: () => Navigator.of(context).pushNamed(NavigatorRoute.newRoutine.name), icon: Icon(Icons.add)),
+      floatingActionButton: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          IconButton(
+              onPressed: () => Navigator.of(context).pushNamed(NavigatorRoute.editSleepType.name),
+              icon: const Icon(Icons.bedtime_outlined)),
+          const SizedBox(width: 10),
+          IconButton(
+              onPressed: () => Navigator.of(context).pushNamed(NavigatorRoute.newRoutine.name),
+              icon: const Icon(Icons.add)),
+        ],
+      ),
     );
   }
 }
