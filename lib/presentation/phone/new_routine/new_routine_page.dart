@@ -15,21 +15,21 @@ class NewRoutinePage extends StatelessWidget {
       body: Column(
         children: [
           TextFormField(
-            decoration: InputDecoration.collapsed(hintText: 'Routine name'),
+            decoration: const InputDecoration.collapsed(hintText: 'Routine name'),
             keyboardType: TextInputType.text,
           ),
           TextFormField(
-            decoration: InputDecoration.collapsed(hintText: 'Total Duration'),
+            decoration: const InputDecoration.collapsed(hintText: 'Total Duration'),
             keyboardType: TextInputType.number,
           ),
           TextFormField(
-            decoration: InputDecoration.collapsed(hintText: 'Light sleep duration'),
+            decoration: const InputDecoration.collapsed(hintText: 'Light sleep duration'),
           ),
           TextFormField(
-            decoration: InputDecoration.collapsed(hintText: 'Dreaming sleep duration'),
+            decoration: const InputDecoration.collapsed(hintText: 'Dreaming sleep duration'),
           ),
           TextFormField(
-            decoration: InputDecoration.collapsed(hintText: 'Deep sleep duration'),
+            decoration: const InputDecoration.collapsed(hintText: 'Deep sleep duration'),
           )
         ],
       ),

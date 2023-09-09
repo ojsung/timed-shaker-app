@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:timed_shaker/configuration/navigator/navigator_route_enum.dart';
+import 'package:timed_shaker/presentation/phone/edit_sleep_type/edit_sleep_type_page.dart';
 import 'package:timed_shaker/presentation/phone/home/home_page.dart';
 import 'package:timed_shaker/presentation/phone/new_routine/new_routine_page.dart';
 
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+
   Route<dynamic> _onGenerateRoute(RouteSettings settings) {
     String? routeName = settings.name;
     if (routeName == null) {
@@ -51,6 +53,8 @@ class MyApp extends StatelessWidget {
     switch (NavigatorRoute.matchRoute(routeName)) {
       case NavigatorRoute.newRoutine:
         return MaterialPageRoute(settings: settings, builder: (context) => const NewRoutinePage());
+      case NavigatorRoute.editSleepType:
+        return MaterialPageRoute(settings: settings, builder: (context) => const EditSleepTypePage());
       case NavigatorRoute.home:
       default:
         return MaterialPageRoute(settings: settings, builder: (context) => const HomePage());

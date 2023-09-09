@@ -3,7 +3,8 @@
 An app to shake your phone at timed intervals
 
 ## Current Status
-- There's literally nothing in here. I made a home page lol. I'll start getting some code added tomorrow (2023-09-08)
+- Pre-alpha, not functional
+- Currently working on enabling vibration functions
 
 ## Features
 ### Expected Features
