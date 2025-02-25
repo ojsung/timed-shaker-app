@@ -12,18 +12,14 @@ sealed class TimerState {
       };
 }
 
-final class TimerInitial extends TimerState {
-  const TimerInitial({required super.duration, required super.initialDuration});
-}
+@Data()
+final class TimerInitial extends TimerState {}
 
-final class TimerRunPause extends TimerState {
-  const TimerRunPause({required super.duration, required super.initialDuration});
-}
+@Data()
+final class TimerRunPause extends TimerState {}
 
-final class TimerRunInProgress extends TimerState {
-  const TimerRunInProgress({required super.duration, required super.initialDuration});
-}
+@Data()
+final class TimerRunInProgress extends TimerState {}
 
-final class TimerRunComplete extends TimerState {
-  const TimerRunComplete({required super.initialDuration}) : super(duration: 0);
-}
+@Data(superDefaults: {'duration': 0})
+final class TimerRunComplete extends TimerState {}
