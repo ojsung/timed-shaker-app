@@ -1,4 +1,4 @@
-import 'package:timed_shaker/core/utilities/data_macro.dart';
+import 'package:data_class/data_class.dart';
 
 @Data()
 sealed class TimerState {
